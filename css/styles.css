@@ -1,0 +1,246 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+body, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #67727E;
+    background: #F5F6FA;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+body>section {
+    max-width: 730px;
+    padding: 64px 0;
+}
+
+article{
+    margin-bottom: 20px;
+    max-width: 730px;
+    padding: 24px;
+    height: 167px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    display: flex;
+    gap: 24px;
+}
+
+aside {
+    width: 40px;
+    height: 100px;
+    background: #F5F6FA;
+    border-radius: 10px;
+    /* text-align: center; */
+    padding: 12px 0px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.more {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #C5C6EF;
+    line-height: 10px;
+    font-weight: 500;
+    /* transition: all .2s; */
+
+}
+.less {
+    font-size: 20px;
+    color: #C5C6EF;
+    line-height: 3px;
+    font-weight: 500;
+    /* transition: all .2s; */
+
+}
+.more:active, .less:active {
+    color: #5357B6;
+}
+.number {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px; 
+    /* text-align: center; */
+    color: #5357B6;
+    margin-bottom: 20px;
+}
+
+div {
+    max-width: 618px;
+}
+.comment div {
+    max-width: 530px;
+}
+
+header {
+    display: flex;
+    gap: 16px;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.nickname {
+    font-weight: 500;
+    line-height: 19px;
+    color: #334253
+}
+
+.reply {
+    margin-left: auto;
+    font-weight: 500;
+    color: #5357B6;
+    padding-left: 22px;
+    background-image: url(../images/Reply.svg);
+    background-repeat: no-repeat;
+    background-position:left 0 top 5px;
+    /* transition: all .5s; */
+}
+.reply:hover {
+    color: #C5C6EF;
+    background-image: url(../images/Reply-hover.svg);
+}
+
+.edit {
+    font-weight: 500;
+    color: #5357B6;
+    margin-left: auto;
+    margin-left: 8px;
+    background-image: url(../images/edit.svg);
+    padding-left: 22px;
+    background-repeat: no-repeat;
+    background-position:left 0 top 4px;
+    /* transition: all .5s; */
+}
+.edit:hover {
+    color: #C5C6EF;
+    background-image: url(../images/edit-hover.svg);
+}
+.del {
+    font-weight: 500;
+    color: #ED6368;
+    margin-left: auto;
+    padding-left: 22px;
+    background-image: url(../images/del.svg);
+    background-repeat: no-repeat;
+    background-position:left 0 top 4px;
+    /* transition: all .5s; */
+}
+.del:hover {
+    color: #FFB8BB;
+    background-image: url(../images/del-hover.svg);
+}
+.comments {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-left: 43px;
+    border-left: 2px solid #E9EBF0;
+    margin-left: 43px;
+}
+.comment {
+    max-width: 642px;
+}
+.comment:nth-child(1) {
+    margin-bottom: 20px;
+}
+.tag {
+    font-weight: 500;
+    color: #5357B6;
+}
+
+.you {
+    width: 36px;
+    height: 19px;
+    background: #5357B6;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    color: #FFFFFF;
+    padding: 1px 6px 3px 6px;
+}
+
+.post {
+    max-width: 730px;
+    height: 144px;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+textarea {
+    padding: 12px 24px;
+    max-width: 506px;
+    width: 100%;
+    height: 96px;
+    resize: none;
+    border: 1px solid #E9EBF0;
+    border-radius: 8px;
+    outline: none;
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #334253;
+    overflow: hidden;
+    /* transition: all .5s; */
+}
+textarea::placeholder{
+    color: #67727E;
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+textarea:focus{
+    border: 1px solid #5357B6;
+}
+
+button {
+    width: 100%;
+    border: none;
+    width: 104px;
+    height: 48px;
+    background: #5357B6;
+    border-radius: 8px;
+    font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    /* transition: all .5s; */
+}
+button:hover {
+    background: #C5C6EF;
+}
+
+form {
+    max-width: 626px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+div.your__acc {
+    width: 119px;
+    display: flex;
+    align-items: center;
+}
+.your__acc .nickname {
+    margin-right: 7px;
+}
